@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinesh Krishna - Personal Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px 20px; color: #e0e0e0;
+    }
+    .card {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px; max-width: 700px; width: 100%;
+      padding: 50px 44px; box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      animation: fadeIn 0.8s ease;
+    }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    .avatar {
+      width:100px; height:100px; border-radius:50%;
+      background: linear-gradient(135deg,#667eea,#764ba2);
+      display:flex; align-items:center; justify-content:center;
+      font-size:2.6rem; font-weight:900; margin:0 auto 24px;
+      border:3px solid rgba(255,255,255,0.25);
+    }
+    h1 {
+      text-align:center; font-size:2rem; font-weight:700;
+      background:linear-gradient(90deg,#a78bfa,#60a5fa);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:6px;
+    }
+    .subtitle { text-align:center; font-size:0.95rem; color:#a0aec0; margin-bottom:36px; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:28px; }
+    .info-item {
+      background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);
+      border-radius:14px; padding:16px 20px; transition:transform 0.2s,border-color 0.2s;
+    }
+    .info-item:hover { transform:translateY(-3px); border-color:#7c3aed; }
+    .info-label { font-size:0.72rem; text-transform:uppercase; letter-spacing:1px; color:#7c3aed; font-weight:600; margin-bottom:4px; }
+    .info-value { font-size:1rem; font-weight:600; color:#f1f5f9; }
+    .skills-section { margin-bottom:28px; }
+    .skills-title { font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:#60a5fa; font-weight:600; margin-bottom:12px; }
+    .skills-list { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill-tag {
+      background:linear-gradient(135deg,#4c1d95,#1e3a8a); border:1px solid rgba(167,139,250,0.3);
+      border-radius:20px; padding:6px 16px; font-size:0.85rem; color:#c4b5fd; font-weight:500;
+    }
+    .objective-section {
+      background:rgba(124,58,237,0.12); border:1px solid rgba(124,58,237,0.3);
+      border-radius:14px; padding:20px 22px;
+    }
+    .objective-title { font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:#a78bfa; font-weight:600; margin-bottom:8px; }
+    .objective-text { font-size:0.95rem; line-height:1.7; color:#cbd5e1; }
+    .badge {
+      display:inline-block; background:linear-gradient(135deg,#667eea,#764ba2);
+      border-radius:6px; padding:3px 10px; font-size:0.7rem; font-weight:700; color:#fff; margin-bottom:10px;
+    }
+    .footer-note { text-align:center; margin-top:28px; font-size:0.78rem; color:#4a5568; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">VK</div>
+    <div class="badge">STUDENT PROFILE</div>
+    <h1>Vinesh Krishna</h1>
+    <p class="subtitle">Vellore Institute of Technology</p>
+    <div class="info-grid">
+      <div class="info-item"><div class="info-label">Register Number</div><div class="info-value">24MIS0054</div></div>
+      <div class="info-item"><div class="info-label">Department</div><div class="info-value">MIS (B.Tech CSE)</div></div>
+      <div class="info-item"><div class="info-label">Institution</div><div class="info-value">VIT Vellore</div></div>
+      <div class="info-item"><div class="info-label">Course</div><div class="info-value">Agile &amp; DevOps - ISWE406P</div></div>
+    </div>
+    <div class="skills-section">
+      <div class="skills-title">Skills</div>
+      <div class="skills-list">
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Kubernetes</span>
+        <span class="skill-tag">Jenkins CI/CD</span>
+        <span class="skill-tag">Git &amp; GitHub</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">Agile &amp; Scrum</span>
+        <span class="skill-tag">Linux</span>
+      </div>
+    </div>
+    <div class="objective-section">
+      <div class="objective-title">Career Objective</div>
+      <p class="objective-text">
+        To build a successful career in DevOps and cloud engineering by leveraging modern CI/CD practices,
+        containerisation, and automation tools. I aim to design robust, scalable software delivery pipelines
+        that accelerate deployment cycles and improve system reliability in real-world enterprise environments.
+      </p>
+    </div>
+    <p class="footer-note">Deployed via Docker + Kubernetes | Jenkins CI/CD Pipeline</p>
+  </div>
+</body>
+</html>

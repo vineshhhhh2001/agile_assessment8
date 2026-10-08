@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIS Department – VIT Vellore</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family:"Inter",sans-serif; background:#050b1a; color:#e2e8f0; }
+    nav {
+      background:rgba(10,20,50,0.95); backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(96,165,250,0.2); padding:18px 40px;
+      display:flex; align-items:center; gap:16px; position:sticky; top:0; z-index:100;
+    }
+    .nav-logo { font-size:1.3rem; font-weight:900; background:linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .nav-sub { font-size:0.8rem; color:#64748b; }
+    .hero {
+      background:linear-gradient(135deg,#0a1628,#0f2a5e,#1a1a60);
+      padding:80px 40px; text-align:center;
+      border-bottom:1px solid rgba(96,165,250,0.15);
+      position:relative; overflow:hidden;
+    }
+    .hero::before {
+      content:""; position:absolute; inset:0;
+      background:radial-gradient(ellipse at 50% 0%,rgba(96,165,250,0.12),transparent 60%);
+    }
+    .hero-badge {
+      display:inline-block; background:linear-gradient(135deg,#1e40af,#4c1d95);
+      border:1px solid rgba(96,165,250,0.3); border-radius:20px;
+      padding:5px 18px; font-size:0.72rem; font-weight:700;
+      text-transform:uppercase; letter-spacing:1.5px; color:#93c5fd; margin-bottom:20px;
+    }
+    h1 { font-size:2.8rem; font-weight:900; margin-bottom:10px;
+      background:linear-gradient(90deg,#60a5fa,#a78bfa,#f0abfc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .hero-sub { font-size:1rem; color:#94a3b8; max-width:600px; margin:0 auto; line-height:1.7; }
+    .section { padding:64px 40px; max-width:1100px; margin:0 auto; }
+    .section-title {
+      font-size:1.4rem; font-weight:700; margin-bottom:8px;
+      background:linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    .section-divider { height:2px; background:linear-gradient(90deg,#3b82f6,transparent); margin-bottom:32px; border-radius:2px; width:60px; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+    .card {
+      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px; padding:28px; transition:transform 0.2s,border-color 0.2s;
+    }
+    .card:hover { transform:translateY(-4px); border-color:#3b82f6; }
+    .card-icon { font-size:2rem; margin-bottom:14px; }
+    .card-title { font-size:1rem; font-weight:700; color:#f1f5f9; margin-bottom:8px; }
+    .card-text { font-size:0.88rem; color:#94a3b8; line-height:1.65; }
+    .faculty-table { width:100%; border-collapse:collapse; }
+    .faculty-table th {
+      background:rgba(59,130,246,0.15); border:1px solid rgba(255,255,255,0.08);
+      padding:12px 16px; text-align:left; font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; color:#60a5fa;
+    }
+    .faculty-table td {
+      border:1px solid rgba(255,255,255,0.06); padding:12px 16px;
+      font-size:0.9rem; color:#cbd5e1; background:rgba(255,255,255,0.02);
+    }
+    .faculty-table tr:hover td { background:rgba(59,130,246,0.07); }
+    .contact-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+    .contact-item {
+      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
+      border-radius:14px; padding:20px; text-align:center;
+    }
+    .contact-label { font-size:0.72rem; text-transform:uppercase; letter-spacing:1px; color:#60a5fa; margin-bottom:6px; }
+    .contact-val { font-size:0.9rem; color:#f1f5f9; font-weight:600; }
+    footer {
+      text-align:center; padding:24px; font-size:0.8rem; color:#374151;
+      border-top:1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+      <div class="nav-logo">VIT Vellore</div>
+      <div class="nav-sub">School of Computer Science & Engineering</div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-badge">Department Information Portal</div>
+    <h1>Management of Information Systems</h1>
+    <p class="hero-sub">Empowering students with cutting-edge technology skills in data management, enterprise systems, and digital transformation.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">About the Department</div>
+    <div class="section-divider"></div>
+    <div class="cards">
+      <div class="card"><div class="card-icon">🎓</div><div class="card-title">Academic Programmes</div><div class="card-text">B.Tech in CSE with specialisation in MIS. Covers databases, cloud systems, ERP, and IT project management.</div></div>
+      <div class="card"><div class="card-icon">🔬</div><div class="card-title">Research Focus</div><div class="card-text">Active research in big data analytics, business intelligence, machine learning, and enterprise architecture.</div></div>
+      <div class="card"><div class="card-icon">🏭</div><div class="card-title">Laboratories</div><div class="card-text">Cloud Computing Lab, Data Analytics Lab, IoT Lab, Networking Lab, and a dedicated DevOps CI/CD Lab.</div></div>
+      <div class="card"><div class="card-icon">🤝</div><div class="card-title">Industry Partners</div><div class="card-text">Collaborations with IBM, SAP, Oracle, TCS, Infosys, and Wipro for internships, projects, and placements.</div></div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="section-title">Faculty Members</div>
+    <div class="section-divider"></div>
+    <table class="faculty-table">
+      <thead>
+        <tr><th>Name</th><th>Designation</th><th>Specialisation</th><th>Email</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Dr. A. Ramesh</td><td>Professor & HoD</td><td>Enterprise Systems</td><td>ramesh.a@vit.ac.in</td></tr>
+        <tr><td>Dr. S. Meenakshi</td><td>Associate Professor</td><td>Data Analytics</td><td>meenakshi.s@vit.ac.in</td></tr>
+        <tr><td>Prof. K. Venkat</td><td>Assistant Professor</td><td>Cloud Computing</td><td>venkat.k@vit.ac.in</td></tr>
+        <tr><td>Prof. P. Divya</td><td>Assistant Professor</td><td>DevOps & Agile</td><td>divya.p@vit.ac.in</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="section-title">Contact Information</div>
+    <div class="section-divider"></div>
+    <div class="contact-grid">
+      <div class="contact-item"><div class="contact-label">Phone</div><div class="contact-val">+91-416-220-2020</div></div>
+      <div class="contact-item"><div class="contact-label">Email</div><div class="contact-val">mis@vit.ac.in</div></div>
+      <div class="contact-item"><div class="contact-label">Location</div><div class="contact-val">TT Block, VIT Vellore</div></div>
+      <div class="contact-item"><div class="contact-label">Office Hours</div><div class="contact-val">Mon–Fri, 9 AM – 5 PM</div></div>
+    </div>
+  </div>
+
+  <footer>Deployed via Jenkins CI/CD | Docker | Kubernetes (3 Replicas) | NodePort 30012</footer>
+</body>
+</html>
